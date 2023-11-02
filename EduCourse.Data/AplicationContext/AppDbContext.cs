@@ -1,12 +1,18 @@
-﻿using Library.Domain.Entities;
+﻿using EduCourse.Domain.Entities.Courses;
+using EduCourse.Domain.Entities.Users;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Library.Persistence.DataContext
+namespace EduCourse.Data.AplicationContext
 {
     public class AppDbContext : DbContext
     {
-        public DbSet<Book> Books { get; set; }
-        public DbSet<Author> Authors { get; set; }
+       public DbSet<User> Users { get; set; }
+        public DbSet<Course> Courses { get; set; }
 
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {

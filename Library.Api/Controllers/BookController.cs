@@ -50,6 +50,7 @@ public class BookController : ControllerBase
         return Ok();
     }
 
+    [HttpDelete]
     public async ValueTask<IActionResult> Delete([FromRoute] Guid bookId)
     {
         await _bookService.DeleteByIdAsync(bookId);
