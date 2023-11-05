@@ -1,18 +1,12 @@
-using EduCourse.Domain.Entities.Users;
 
-namespace EduCourse.Api
-{
-    public class Program
-    {
-        public static void Main(string[] args)
-        {
-            User user = new User();
-            var builder = WebApplication.CreateBuilder(args);
-            var app = builder.Build();
+using EduCourse.Api.Configurations;
 
-            app.MapGet("/", () => "Hello World!");
+var builder = WebApplication.CreateBuilder(args);
+// builder.Configuration.AddUserSecrets<Program>();
+await builder.ConfigureAsync();
 
-            app.Run();
-        }
-    }
-}
+
+var app = builder.Build();
+await app.ConfigureAsync();
+
+await app.RunAsync();

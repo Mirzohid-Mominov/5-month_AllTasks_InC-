@@ -6,13 +6,11 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.13" />
-  </ItemGroup>
 
-	<ItemGroup>
-		<ProjectReference Include="..\EduCourse.Domain\EduCourse.Domain.csproj" />
-	</ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EduCourse.Application\EduCourse.Application.csproj" />
+    <ProjectReference Include="..\EduCourse.Service\EduCourse.Persistence.csproj" />
+  </ItemGroup>
 
 
 </Project>

@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EduCourse.Domain.Entities.Enums
+namespace EduCourse.Domain.Entities
 {
-    public enum UserRole
+    public enum LocationType
     {
-        
+        Country,
+        City
     }
 }
