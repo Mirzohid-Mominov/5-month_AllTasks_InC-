@@ -31,8 +31,7 @@ public class AuthorService : IAuthorService
     {
         await _appDbContext.Authors.AddAsync(author, cancellationToken);
 
-        if (saveChanges)
-            await _appDbContext.SaveChangesAsync(cancellationToken);
+        await _appDbContext.SaveChangesAsync();
 
         return author;
     }

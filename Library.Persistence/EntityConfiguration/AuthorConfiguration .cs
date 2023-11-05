@@ -15,6 +15,7 @@ namespace Library.Persistence.EntityConfiguration
         {
             builder.Property(author => author.FirstName).IsRequired().HasMaxLength(256);
             builder.Property(author => author.LastName).IsRequired().HasMaxLength(256);
+            builder.Property(author => author.Books).IsRequired().HasMaxLength(1000);
         }
     }
 }

@@ -9,7 +9,8 @@ namespace Library.Api.Configurations
     {
         private static WebApplicationBuilder AddPersistence(this WebApplicationBuilder builder)
         {
-            builder.Services.AddDbContext<AppDbContext>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+            builder.Services.AddDbContext<AppDbContext>(options =>
+            options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             return builder;
         }
