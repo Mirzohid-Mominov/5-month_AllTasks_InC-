@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Common\Identity\Services\" />
+    <Folder Include="Common\Mapper\" />
+    <Folder Include="Common\Notifications\Brokers\" />
+    <Folder Include="Common\Notifications\Services\" />
+    <Folder Include="Common\Validators\" />
+    <Folder Include="Common\Settings\" />
+  </ItemGroup>
+
+</Project>
