@@ -7,11 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Common\Identity\Services\" />
-    <Folder Include="Common\Models\Querying\" />
-    <Folder Include="Common\Notifications\Services\" />
-    <Folder Include="Common\Querying\Extensions\" />
-    <Folder Include="Common\Settings\" />
+    <ProjectReference Include="..\OddiyBlogSayt.Domain\OddiyBlogSayt.Domain.csproj" />
   </ItemGroup>
 
 </Project>
