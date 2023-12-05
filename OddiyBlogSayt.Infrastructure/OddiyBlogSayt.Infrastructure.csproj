@@ -7,12 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Common\Identity\Services\" />
-    <Folder Include="Common\Mapper\" />
-    <Folder Include="Common\Notifications\Brokers\" />
-    <Folder Include="Common\Notifications\Services\" />
-    <Folder Include="Common\Validators\" />
-    <Folder Include="Common\Settings\" />
+    <ProjectReference Include="..\OddiyBlogSayt.Application\OddiyBlogSayt.Application.csproj" />
+    <ProjectReference Include="..\OddiyBlogSayt.Persistence\OddiyBlogSayt.Persistence.csproj" />
   </ItemGroup>
 
 </Project>
